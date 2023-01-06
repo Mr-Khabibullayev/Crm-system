@@ -6,9 +6,15 @@ from .views import (
     customer,
     createOrder,
     updateOrder,
+    loginPage,
+    registerPage,
 )
 
 urlpatterns = [
+    path("register/", registerPage, name="register"),
+    path("login/", loginPage, name="login"),
+    
+    
     path('',home,name='home'),
     path('products/', products,name='products'),
     path('customer/<str:pk_test>/',customer, name='customer' ),

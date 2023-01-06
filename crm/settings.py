@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    # outdor apps
+    'django_filters',
+    
     # my apps
     'accounts',
 ]
