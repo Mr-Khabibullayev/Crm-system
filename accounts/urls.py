@@ -10,6 +10,7 @@ from .views import (
     registerPage,
     logoutUser,
     userPage,
+    accountSettings,
 )
 
 urlpatterns = [
@@ -19,6 +20,9 @@ urlpatterns = [
      
     path('',home,name='home'),
     path('user/',userPage, name='user-page'),
+    
+    path('account/',accountSettings, name='account'),
+    
     path('products/', products,name='products'),
     path('customer/<str:pk_test>/',customer, name='customer' ),
     
