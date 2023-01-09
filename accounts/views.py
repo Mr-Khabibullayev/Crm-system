@@ -8,7 +8,6 @@ from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import Group
 
 
 # Create your view here
@@ -30,8 +29,7 @@ def registerPage(request):
                 user = form.save()
                 username = form.cleaned_data.get('username')
                 
-                group = Group.objects.get(name='customer')
-                user.groups.add(group)
+                
                 
                 messages.success(request,'Account was createrd for ' + username )
             
