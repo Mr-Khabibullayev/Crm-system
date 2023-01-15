@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     
     # outdor apps
     'django_filters',
+    'storages',
+    
     
     # my apps
     'accounts.apps.AccountsConfig',
@@ -67,6 +69,20 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'first_test_db',
+#         'USER':'khabibullayev',
+#         'PASSWORD': 'axrorbek1234567890',
+#         'HOST': 'mydatabase-instance.c4y9zsv8lpjm.us-east-1.rds.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
+
 
 DATABASES = {
     'default': {
@@ -132,4 +148,12 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMIAL_HOST_USER = 'habibullayevaxrorbek960@gmail.com'
-EMAIL_HOST_PASSWORD = 'klaxhlnseikekioh'
+EMAIL_HOST_PASSWORD = 'wvtxfeonsfdgoekc'
+
+# AWS_ACCESS_KEY_ID = 'AKIAZPKVWHPUBYG5VQU3'
+# AWS_SECRET_ACCSESS_KEY = '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'
+# AWS_STORAGE_BUCKED_NAME = 'axrorbek-crm-bucked'
+
+# AWS_S3_FILE_OVERWRITE = False
+# AWS_DEFAULT_ACL = None
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3BotoStorage'
